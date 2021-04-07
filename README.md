@@ -4,7 +4,7 @@
 
 `$ python app.py`
 
-### Putting data in json format
+### Putting the data 
 
 `$ curl localhost:5000/load -d '["foobar", "aabb", "barfoo", "baba", "boofar", "test"]' -H 'Content-Type: application/json' -X PUT`
 
