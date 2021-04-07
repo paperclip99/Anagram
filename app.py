@@ -11,9 +11,9 @@ class Anagram(Resource):
         word = request.args.get("word")
         answer = []
         for i in anagramm["load"]:
-            b = ' '.join(i).split()
+            b = ' '.join(i.lower()).split()
             b.sort()
-            c = ' '.join(word).split()
+            c = ' '.join(word.lower()).split()
             c.sort()
             if c == b: answer.append(i)
         if len(answer) == 0: return None
