@@ -1,5 +1,9 @@
 # Anagram
 
+### Run the app
+
+`$ python app.py`
+
 ### Posting data in json format
 
 `$ curl localhost:5000/load -d '["foobar", "aabb", "barfoo", "baba", "boofar", "test"]' -H 'Content-Type: application/json' -X PUT`
