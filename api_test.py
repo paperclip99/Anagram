@@ -7,7 +7,7 @@ class FlaskTest(unittest.TestCase):
     ANAGRAM_LIST = {
         "load": ["foobar", "test", "aabb", "abab"]
     }
-    def test_post_anagram(self):
+    def test_put_anagram(self):
         r = requests.put(FlaskTest.API_URL, json=FlaskTest.ANAGRAM_LIST)
         self.assertEqual(r.status_code, 200)
 
