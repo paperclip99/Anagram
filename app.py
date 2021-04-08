@@ -18,7 +18,7 @@ class Anagram(Resource):
             if c == b: answer.append(i)
         if len(answer) == 0: return None
         else: return answer
-
+    
     def put(self):
         anagramm["load"] = request.get_json()
         return anagramm["load"]
